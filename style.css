@@ -23,7 +23,7 @@ body {
 }
 
 p {
-    width: 300px;
+    max-width: 300px;
 }
 
 .custom-button {
@@ -94,7 +94,7 @@ p {
 
 .skill-box {
     height: 300px;
-    width: 320px;
+    max-width: 320px;
     border-radius: 15px;
     background-color: #393E46;
     color: #EEEEEE;
@@ -131,7 +131,7 @@ p {
     align-content: center;
     align-items: center;
     height: 300px;
-    width: 600px;
+    max-width: 600px;
     border-radius: 15px;
     color: #393E46;
     padding: 10px;
@@ -149,10 +149,14 @@ p {
     .project-box {
       flex-direction: column;
       justify-content: center;
-      width: 350px;
+      max-width: 350px;
       height: 500px;
     }
     .project-box img {
         margin: 1rem;
+    }
+    .skill-box {
+        width: 100%;
+        height: auto;
     }
   }
