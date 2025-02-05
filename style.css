@@ -15,11 +15,32 @@
     color: #EEEEEE ;
 }
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Ensure padding/border does not affect width */
+}
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 body {
     background-color: #EEEEEE;
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto; /* Center the content */
+    padding: 0; /* Remove extra padding */
+    width: 100%; /* Ensure full width */
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of items */
 }
 
 
@@ -177,6 +198,7 @@ body {
     border-radius: 15px;
     color: #393E46;
     padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -243,7 +265,7 @@ body {
     }
 
     .hero-div {
-        height: 40vh; /* Smaller height on mobile */
+        height: 50vh; /* Smaller height on mobile */
     }
 
     #about-me p {
