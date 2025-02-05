@@ -203,7 +203,7 @@ body {
 }
 
 .project-description {
-    margin: 20px;
+    padding: 20px;
 }
 
 .project-description h5 {
@@ -261,15 +261,6 @@ body {
 
     .hero-div {
         height: 50vh; /* Smaller height on mobile */
-    }
-
-    #about-me p {
-        font-size: 14px;
-        line-height: 1.4;
-        padding: 10px;
-        width: 100%; /* Ensure the text doesn't overflow */
-        margin: 0 auto; /* Center the text */
-        text-align: justify; /* Justify text for better readability */
     }
 }
 
