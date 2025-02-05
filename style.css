@@ -22,9 +22,6 @@ body {
     font-style: normal;
 }
 
-p {
-    max-width: 300px;
-}
 
 .custom-button {
     /* border: solid 1px #222831;
@@ -78,14 +75,30 @@ p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: top;
     margin-top: 50px;
     gap: 20px;
 }
 
+.intro p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: large;
+}
+.intro h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#about-me p {
+    max-width: 500px;
+}
+
 .skill-group {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -93,13 +106,13 @@ p {
 }
 
 .skill-box {
-    height: 300px;
-    max-width: 320px;
+    height: auto;
+    max-width: 500px;
     border-radius: 15px;
     background-color: #393E46;
     color: #EEEEEE;
     padding: 20px;
-    align-content: center;
+    align-content: top;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
@@ -112,12 +125,20 @@ p {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
+    gap: 10px;
+}
+
+.logo-group figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .project-group {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
@@ -126,37 +147,128 @@ p {
 
 .project-box {
     display: flex;
-    flex-direction: row;
-
+    flex-direction: column;
+    justify-content: center;
     align-content: center;
     align-items: center;
-    height: 300px;
-    max-width: 600px;
+    height: auto;
+    max-width: 500px;
+    min-width: 500px;
     border-radius: 15px;
     color: #393E46;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.app-project-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 500px;
+    min-width: 500px;
+    border-radius: 15px;
+    color: #393E46;
+    padding: 20px;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.app-project-box .project-description {
+    width: 250px;
+}
+
+.project-description {
+    margin: 20px;
+}
+
+.project-description h5 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.project-description p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: medium;
 }
 
 .project-box img {
     border: #222831 solid 1px;
     border-radius: 10px;
 }
+.project-box button {
+    margin: 20px;
+}
+
+@media (max-width: 1029px) {
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        gap: 0px;
+    }
+}
 
   @media (max-width: 600px) {
 
+    .project-group {
+      flex-direction: column;
+    }
+
     /* CSS for screens below or equal to 600px wide */
     .project-box {
-      flex-direction: column;
-      justify-content: center;
-      max-width: 350px;
-      height: 500px;
+      width: 100%;
+      min-width: 100%;
+      height: auto;
     }
-    .project-box img {
-        margin: 1rem;
-    }
+
     .skill-box {
         width: 100%;
         height: auto;
     }
   }
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+#goToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+#goToTop:hover {
+    background-color: #0056b3;
+}
+
+/* Make the button visible when scrolling down */
+body {
+    position: relative;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+}
+
+body:hover #goToTop {
+    display: block;
+}
