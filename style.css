@@ -21,10 +21,6 @@
     box-sizing: border-box; /* Ensure padding/border does not affect width */
 }
 
-html, body {
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-}
-
 body {
     background-color: #EEEEEE;
     font-family: "Roboto", sans-serif;
@@ -34,14 +30,6 @@ body {
     padding: 0;
     width: 100%;
 }
-
-.container {
-    margin: 0 auto; /* Center the content */
-    padding: 0 15px; /* Add horizontal padding to avoid touching the screen edges */
-    width: 100%; /* Ensure full width */
-
-}
-
 
 .custom-button {
     /* border: solid 1px #222831;
@@ -61,13 +49,18 @@ body {
 }
 
 .hero-div {
-    background-image: url(./assets/hero-background.jpg);
     color: #EEEEEE;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-}
+    width: 100%;
+    position: relative;
+    background-image: url(./assets/hero-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1280 / 640;
+  }
 
 .hero-h1 {
     font-family: "Sacramento", cursive;
@@ -95,7 +88,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: top;
     margin-top: 50px;
     gap: 20px;
 }
@@ -122,7 +114,6 @@ body {
 .skill-group {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin: 10px;
@@ -148,7 +139,6 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     margin-top: 30px;
     gap: 10px;
 }
@@ -199,7 +189,7 @@ body {
 }
 
 .project-description {
-    padding: 20px;
+    padding: 10px;
 }
 
 .project-description h5 {
@@ -238,15 +228,23 @@ body {
     .project-group, .skill-group {
         flex-direction: column; 
         align-items: center;
+        padding: 0 10px;
     }
 
     .project-box, .app-project-box, .skill-box {
       width: 100%;
     }
 
-    .project-box, .app-project-box {
-        padding: 10px; /* Adjust padding to prevent content from touching edges */
-        box-sizing: border-box; /* Include padding in the width calculation */
+    .project-box, .app-project-box{
+        padding: 10px; 
+    }
+
+    .app-project-box img {
+        height: 300px;
+    }
+
+    .project-box img {
+        height: 200px;
     }
 
     .hero-div {
