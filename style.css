@@ -198,10 +198,6 @@ body {
     box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.app-project-box .project-description {
-    width: 250px;
-}
-
 .project-description {
     padding: 20px;
 }
@@ -220,7 +216,7 @@ body {
     font-size: medium;
 }
 
-.project-box img {
+.project-box img, .app-project-box img {
     border: #222831 solid 1px;
     border-radius: 10px;
 }
@@ -240,27 +236,21 @@ body {
 
 @media (max-width: 600px) {
     .project-group, .skill-group {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
+        flex-direction: column; 
+        align-items: center;
     }
 
-    /* CSS for screens below or equal to 600px wide */
     .project-box, .app-project-box, .skill-box {
       width: 100%;
     }
 
     .project-box, .app-project-box {
-        margin: 10px 0; /* Center the project boxes with margin */
-        padding: 15px; /* Adjust padding to prevent content from touching edges */
+        padding: 10px; /* Adjust padding to prevent content from touching edges */
         box-sizing: border-box; /* Include padding in the width calculation */
     }
 
-    .project-description, .app-project-box .project-description {
-        width: 100%; /* Ensure descriptions also take full width */
-    }
-
     .hero-div {
-        height: 50vh; /* Smaller height on mobile */
+        height: 45vh; /* Smaller height on mobile */
     }
 }
 
@@ -268,7 +258,6 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-
 
 #goToTop {
     position: fixed;
