@@ -5,7 +5,7 @@ This folder contains the original version of the portfolio website that has been
 ## Files
 
 - `index.html` - Original English version
-- `indexjp.html` - Original Japanese version  
+- `indexjp.html` - Original Japanese version
 - `style.css` - Original stylesheet
 
 ## Date Archived
@@ -15,6 +15,7 @@ January 2025
 ## Note
 
 The new version 2 is now the main website with:
+
 - Modern glassmorphism design
 - Reorganized skills section
 - Featured projects section

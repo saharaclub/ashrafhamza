@@ -348,6 +348,17 @@ header.scrolled {
 .logo-group img {
     filter: grayscale(20%);
     transition: filter 0.3s ease;
+    max-width: 100%;
+    height: auto;
+    max-height: 55px;
+    width: auto;
+}
+
+.logo-group img.logo-wide {
+    max-width: 90px;
+    max-height: 50px;
+    height: auto;
+    width: auto;
 }
 
 .logo-group figure:hover img {
