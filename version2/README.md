@@ -58,9 +58,11 @@ version2/
 - ✅ Modern gradient buttons
 - ✅ Better visual hierarchy
 
-## 🚀 Usage
+## 🚀 Status
 
-Simply open `index.html` or `indexjp.html` in a web browser. All assets are referenced from the parent directory (`../assets/`), so make sure the assets folder exists in the parent directory.
+**This version is now the main website!** The files have been moved to the root directory and are live.
+
+All assets are referenced from `./assets/` directory.
 
 ## 🎨 Color Scheme
 

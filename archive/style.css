@@ -1,0 +1,291 @@
+
+.theme-color-black {
+    color: #222831 ;
+}
+
+.themse-color-charcoal {
+    color: #393E46 ;
+}
+
+.theme-color-green {
+    color: #00ADB5  ;
+}
+
+.theme-color-grey {
+    color: #EEEEEE ;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; /* Ensure padding/border does not affect width */
+}
+
+body {
+    background-color: #EEEEEE;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.custom-button {
+    /* border: solid 1px #222831;
+    line-height: 2;
+    border-radius: 10px; */
+    background-color: #00ADB5;
+    border: #00ADB5;
+    color: #EEEEEE;
+    text-shadow: 1px 1px 1px #393E46;
+    
+    
+}
+
+.navbar-title {
+    border: solid black 4px;
+    padding: 3px;
+}
+
+.hero-div {
+    color: #EEEEEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    background-image: url(./assets/hero-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    aspect-ratio: 1280 / 640;
+  }
+
+.hero-h1 {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5rem;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.hero-h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.pro {
+    text-decoration-line: underline;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    gap: 20px;
+}
+
+.intro p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: large;
+}
+.intro h5 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#about-me p {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 15px;
+}
+
+.skill-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.skill-box {
+    height: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: #393E46;
+    color: #EEEEEE;
+    padding: 20px;
+    align-content: top;
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.skill-box p {
+    margin-top: 20px;
+}
+
+.logo-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+}
+
+.logo-group figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 10px;
+}
+
+.project-box  {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    color: #393E46;
+    padding: 20px; /* Padding inside each project box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.app-project-box  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: auto;
+    max-width: 500px;
+    border-radius: 15px;
+    color: #393E46;
+    padding: 20px; /* Padding inside each project box */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.project-description {
+    padding: 10px;
+}
+
+.project-description h5 {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.project-description p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: medium;
+}
+
+.project-box img, .app-project-box img {
+    border: #222831 solid 1px;
+    border-radius: 10px;
+}
+.project-box button {
+    margin: 20px;
+}
+
+@media (max-width: 1029px) {
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0px;
+        gap: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-group, .skill-group {
+        flex-direction: column; 
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .project-box, .app-project-box, .skill-box {
+      width: 100%;
+    }
+
+    .project-box, .app-project-box{
+        padding: 10px; 
+    }
+
+    .app-project-box img {
+        height: 300px;
+    }
+
+    .project-box img {
+        height: 200px;
+    }
+
+    .hero-div {
+        height: 45vh; /* Smaller height on mobile */
+    }
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#goToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #00ADB5;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+#goToTop:hover {
+    background-color: #0056b3;
+}
+
+/* Make the button visible when scrolling down */
+body {
+    position: relative;
+}
+
+#top {
+    position: absolute;
+    top: 0;
+}
+
+body:hover #goToTop {
+    display: block;
+}
