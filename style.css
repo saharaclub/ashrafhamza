@@ -101,15 +101,18 @@ header.scrolled {
 
 .hero-div {
     position: relative;
-    min-height: 90vh;
+    min-height: 60vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, rgba(0, 173, 181, 0.9) 0%, rgba(34, 40, 49, 0.9) 100%),
+    background: linear-gradient(135deg, rgba(0, 173, 181, 0.7) 0%, rgba(34, 40, 49, 0.5) 100%),
                 url(../assets/hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
+    aspect-ratio: 1280 / 640;
     overflow: hidden;
 }
 
@@ -120,7 +123,7 @@ header.scrolled {
     left: 0;
     right: 0;
     bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 173, 181, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle at 50% 50%, rgba(0, 173, 181, 0.15) 0%, transparent 70%);
     animation: pulse 4s ease-in-out infinite;
 }
 
@@ -458,7 +461,7 @@ header.scrolled {
 .featured-project-image {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(135deg, rgba(0, 173, 181, 0.1) 0%, rgba(34, 40, 49, 0.1) 100%);
+    background: transparent;
 }
 
 .featured-project-image img {
