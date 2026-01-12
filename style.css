@@ -109,7 +109,7 @@ header.scrolled {
     justify-content: center;
     align-items: center;
     background: linear-gradient(135deg, rgba(0, 173, 181, 0.7) 0%, rgba(34, 40, 49, 0.5) 100%),
-                url(../assets/hero-background.jpg);
+                url(assets/hero-background.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
